@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9DE"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!--
+    <TextView
+        android:id="@+id/groupsigntitle"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/groupsigntitle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/groupsignvalue"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/groupsigntitle"
+        android:layout_alignBottom="@+id/groupsigntitle"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/groupsigntitle"
+        android:text="@string/groupsignvalue"
+        android:textSize="7pt" />
+
+      <LinearLayout android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:background="#000"
+
+    >
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#FFFFFF"
+        android:text="TextView"/>
+
+</LinearLayout>
+
+
+    -->
+
+    <TextView
+        android:id="@+id/longtitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/longtitude"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/longtitudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/longtitude"
+        android:background="#000" >
+
+        <TextView
+            android:id="@+id/longtitudevalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:text="@string/longtitudevalue"
+            android:textSize="7pt" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/longtitude"
+        android:layout_alignRight="@+id/longtitude"
+        android:layout_below="@+id/longtitude"
+        android:layout_marginTop="4dp"
+        android:text="@string/latitude"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/latitudeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/longtitude"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/latitude"
+        android:background="#000" >
+
+        <TextView
+            android:id="@+id/latitudevalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:text="@string/latitudevalue"
+            android:textSize="7pt" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/radiogrouplayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latitudevalue"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sextitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dip"
+            android:text="@string/masterorslave"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioGroup
+            android:id="@+id/controlsigngroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:singleLine="true" >
+
+            <RadioButton
+                android:id="@+id/slavebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="7pt"
+                android:text="@string/slave" />
+
+            <RadioButton
+                android:id="@+id/masterbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:textSize="7pt"
+                android:text="@string/master" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+    -->
+
+    <Button
+        android:id="@+id/scanebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latitude"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/scanebutton" />
+
+    <TextView
+        android:id="@+id/signcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/scanebutton"
+        android:layout_marginTop="43dp"
+        android:text="@string/signcode"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/scanebarcodeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/scanebutton"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/signcode"
+        android:background="#000" >
+
+        <TextView
+            android:id="@+id/signcodevalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:text="@string/space"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finalsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanebarcodeline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/finalsend" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signcode"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/scanebarcodeline"
+        android:layout_below="@+id/finalsend"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
